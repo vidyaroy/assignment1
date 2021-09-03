@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************************************** Side Nav **********************/
+.side-nav {
+    /* position: absolute; */
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 100px;
+}
+
+.div {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.social-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*************************************** Main **********************/
+main {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    margin: 10px 90px;
+    display: flex;
+    /* background-color:bisque; */
+    height: 90px;
+    border: 1px solid grey;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.header__mainlogo {
+    padding-top: 10px;
+} 
+
+.header__mainlogo h4 {
+    float: right;
+    position: relative;
+    left: 85px;
+    bottom: 60px;
+    font-size: 16px;
+}
+
+.header__mainlogo p {
+    position: relative;
+    left: 85px;
+    bottom: 70px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1;
+    padding: 5px 20px;
+
+}
+
+/*************************************** Navbar-1 Navbar-2 **********************/
+.header__nav {
+    height: 70px;
+    width: 100%;
+    margin-left:100px;
+    margin-top: 10px;
+}
+
+.header__navlogo {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.header__nav p {
+    font-size: 10px;
+
+}
+
+.navbar-1 {
+  position: relative;
+  bottom: 110px;
+  font-size: 13px;
+}
+
+.navbar-2 {
+    position: relative;
+    bottom: 90px;
+    left: 240px;
+    font-size: 15px;
+}
+
+.example button {
+    padding: 10px;
+    color: gray;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: white;
+}  
+
+
+
+
+
+/*********************************** Showcase ********************************/
+section#showcase {
+    height: 500px;
+    background-image: url(images/building-with-flags-outside_cq5dam.web.1200.630);
+    margin: 20px 90px 0;
+}
+
+.showcase-container {
+   padding-top: 90px;
+   font-family: 'Roboto' sans-serif;
+   line-height: 1.1;
+}
+
+.showcase-p {
+    font-size: 14px;
+}
+
+.btn-1 {
+    background-color: orangered;
+    border-radius:  50px 50px 50px 50px;
+    border: 1px solid orangered;
+}
+
+small {
+    padding: 10px;
+}
+
+
+/********************************************** News ********************************/
+
+.news {
+    padding: 30px 87px 0;
+}
+
+.news-h4 {
+    font-weight: 800;
+    color: #CBD7E5;
+}
+.news-h3 {
+    font-weight: 900;
+    color: #0061A2;
+}
+
+.seeall {
+    color: #EA6918;
+}
+
+.news-p {
+    font-size: 11px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    color: #42C4CF;
+}
+
+.news-h {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/********************************************** Icons ********************************/
+
+.icon-maindiv {
+    padding: 30px 87px 0;
+}
+
+.icons__para {
+    padding-top: 20px;
+}
+
+/********************************************** Events ********************************/
+.events {
+    padding: 30px 87px 0;
+}
+
+
+
+/**************************************** media Queries **********************************/
+  
+@media screen and (max-width:768px) {
+    .side-nav {
+        display:none;
+    }
+}
+
+@media screen and (max-width:1003px) {
+    .navbar-1, .navbar-2 {
+       display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #header  {
+        width: 100%;
+        background-color: blue;
+        margin-left: 0;
+        padding-left: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .header__mainlogo h4  {
+        padding-left:10px;
+    }
+
+    .header__nav {
+        margin-left: 150px;
+    }
+}
+
+/* showcase */
+@media screen and (max-width:768px) {
+    section#showcase {
+        background-position: 100%;
+        align-items: flex-end;
+        margin: 0 auto;
+       
+    }
+    .container {
+        position: relative;
+        top: 500px;
+        background-color: blue;
+        text-align: center;
+        max-width: 100%;
+        margin: 0;   
+    }
+}
+
+@media screen and (max-width:414px) {
+    section#showcase {
+        background-position: 80%;
+        align-items: flex-end;
+        margin: 0 auto;
+    }
+       
+}
+
+/* news */
+@media screen and (max-width:768px) {
+    .news {
+        position: relative;
+        top: 500px;   
+     }
+     .seeall {
+         position: absolute;
+         top: 750px;
+         left: 300px;
+         z-index: 1;
+
+    }
+}
+
+/* icons */
+@media screen and (max-width:768px) {
+    .icon-maindiv {
+        position: relative;
+        top: 500px;  
+    }
+}
+
+@media screen and (max-width:768px) {
+    .events {
+        position: relative;
+        top: 500px;  
+    }
+}
