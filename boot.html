@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/fbadad80a0.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://kit.fontawesome.com/fbadad80a0.js" crossorigin="anonymous"></script> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,74 +23,76 @@
     <title>bootstrap</title>
   </head>
   <body>
-    <aside class="side-nav d-flex flex-column">
-      <div class="div d-flex">    <!-- mt-5 ml-4 -->
-        <img src="images/Flag_of_Great_Britain_(1707–1800).svg.png" width="30" height="22">
-        <div>
+    <aside class="side__nav d-flex flex-column">
+      <div class="side__nav-img d-flex">
+        <img src="images/Flag_of_Great_Britain_(1707–1800).svg.png" width="20" height="13">
+        <div class="d-flex sidenav__dropdown">
           <small>EN</small> 
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
       </div>
-       <ul class="nav flex-column social-links ">
+      <ul class="nav flex-column social-links ">
         <li class="nav-item">
-        <a href="#" class="nav-link py-1"><i class="fab fa-facebook-f"></i></a>
-       </li>
-       <li class="nav-item">
-        <a href="#" class="nav-link py-1"><i class="fab fa-youtube"></i></a>
-       </li>
-       <li class="nav-item">
-        <a href="#" class="nav-link py-1"><i class="fab fa-instagram"></i></a>
-       </li>
-       <li class="nav-item">
-        <a href="#" class="nav-link py-1"><i class="fab fa-twitter"></i></a>
-       </li>
-       </ul>
+          <a href="#" class="side__nav-link py-1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="side__nav-link py-1"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="side__nav-link py-1"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="side__nav-link py-1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+      </ul>
     </aside>
 
-    <!----------------------------------------- Main ----------------------------->
-    <main>
-      <header id="header">
-        <div class="header__mainlogo">  <!-------------- Main Logo --------------->
-          <img src="images/inter.png" alt="logo" width="80px">
-          <h4 class="h4">Inter-Parliamentary Union</h4>
-          <p class="p">For democracy. For everyone</p>
+    <!----------------------------------------- Header ----------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="brand-content">
+        <a class="navbar-brand" href="#"><img src="images/inter.png" alt="logo" width="70px"></a>
+        <div class="content">
+          <p class="p">Inter-Parliamentary Union</p>
+          <p class="p-1">For democracy.For Everyone</p>
         </div>
-        <div class="header__nav border-left">  <!---------- Anniversry Logo ------------>
-          <div class="header__navlogo">
-            <img src="images/inter.png" alt="anniversry" width="50px">
-            <p>Anniversry</p>
-          </div>
-          <nav class="navbar navbar-expand-sm  float-right navbar-1">  <!--------- Navbar 1---------->
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a> 
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact Us</a>   
-              </li>
-            </ul>
-            <form class="example">
+      </div>
+      <div class="brand-anniversry">
+        <a href="#" class="anni-logo"><img src="images/inter.png" width="50px"></a>
+        <p class="p-1">Anniversry</p>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto nav-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <form class="example">
               <button><i class="fa fa-search"></i></button>
             </form>
-          </nav>
-          <nav class="navbar navbar-expand-lg float-right navbar-2 ">  <!--------- Navbar 2---------->
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Our work</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">News</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Events</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Resources</a>
-              </li>
-            </ul>  
-          </nav>
+        </ul>
+        <div class="navbar-1">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Our work</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Resources</a>
+            </li>
+          </ul>
         </div>
-      </header>
-    </main>
+      </div>
+    </nav>
 
     <!---------------------------- Showcase ---------------------------->
     <section id="showcase">
@@ -106,17 +111,17 @@
     <div class="container-fluid news my-5">
       <div class="d-flex justify-content-between">
         <div class="latest-news">
-          <h5 class="news-h4 mb-0 ">LATEST</h5>
-          <h1 class="news-h3 mt-0 mb-3">NEWS</h1>
+          <h5 class="heading-1 mb-0 ">LATEST</h5>
+          <h1 class="heading-2 mt-0 mb-3">NEWS</h1>
         </div>
-        <a href="#" class="seeall pt-5 font-weight-bold">See All News &#8594</a>
+        <button type="button" class="btn btn-lg read-more"><small>See All News &#8594</small></button>
       </div>
       <div class="row">
         <div class="col">
           <div class="icon">
             <img src="images/country/1000.PNG">
           </div>
-          <p class="news-p pt-3">NEWS IN BRIEF</p>
+          <p class="small-para pt-3">NEWS IN BRIEF</p>
           <h5 class="news-h font-weight-bold">UK Parliament makes 'steady progress' on gender equality</h5>
           <p class="font-italic">20 Decemember 2018</p>
         </div>
@@ -124,7 +129,7 @@
           <div class="icon">
             <img src="images/country/vote.PNG">
           </div>
-          <p class="news-p pt-3">PRESS RELEASES</p>
+          <p class="small-para pt-3">PRESS RELEASES</p>
           <h5 class="news-h font-weight-bold">Youth representation in parliament nudges up acco...</h5>
           <p class="font-italic">13 Decemember 2018</p>
         </div>
@@ -132,7 +137,7 @@
           <div class="icon">
             <img src="images/country/solar.PNG">
           </div>
-          <p class="news-p pt-3">NEWS IN BRIEF</p>
+          <p class="small-para pt-3">NEWS IN BRIEF</p>
           <h5 class=" news-h font-weight-bold">MPs call for bolder action to fight climate change</h5>
           <p class="font-italic">11 Decemember 2018</p>
         </div>
@@ -140,7 +145,7 @@
           <div class="icon">
             <img src="images/country/tank.PNG">
           </div>
-          <p class="news-p pt-3">NEWS IN BRIEF</p>
+          <p class="small-para pt-3">NEWS IN BRIEF</p>
           <h5 class="news-h font-weight-bold">Parliamentarians push for bigger role at WTO</h5>
           <p class=" news-hp font-italic">10 Decemember 2018</p>
         </div>
@@ -149,8 +154,8 @@
 
     <!---------------------------- icons ---------------------------->
     <div class="container-fluid icon-maindiv">
-      <h5 class="news-h4 mb-0 ">PAGES</h5>
-      <h1 class="news-h3 mt-0 mb-3">MOST VISITED</h1>
+      <h5 class="heading-1 mb-0 ">PAGES</h5>
+      <h1 class="heading-2 mt-0 mb-3">MOST VISITED</h1>
       <div class="row">
         <div class="col-xl-4 col-sm-6 d-flex">
           <div class="effect">
@@ -216,11 +221,373 @@
     </div>
     
     <!---------------------------- Events ---------------------------->
-    <div class="container-fluid events">
-      <h5 class="news-h4 mb-0 ">UPCOMING</h5>
-        <h1 class="news-h3 mt-0 mb-3">EVENTS</h1>
+    <div class="container-fluid my-5 events">
+      <div class="d-flex justify-content-between">
+        <div class="latest-events">
+          <h5 class="heading-1 mb-0 ">UPCOMING</h5>
+          <h1 class="heading-2 mt-0 mb-3">EVENTS</h1>
+        </div>  
+        <button type="button" class="btn btn-lg read-more-1"><small>See All Events &#8594</small></button>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md detail">
+            <div class="row main-event">
+              <p class="font-italic text-white">29 January 2019</p>
+              <p class="small-para">GENEVA, SWITZERLAND</p>
+              <h5 class="font-weight-bold text-white">158th session of the Committee on the Human Rights of Perliamentarins</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 main-event-8">
+            <div class="row main-event-9">
+              <div class="col-5 offset-1 main-event-1 pt-5 pb-3">
+                <p class="font-italic text-white">31 January 2019</p>
+                <p class="small-para">EGYPT</p>
+                <h5 class="text-white">Third Roundable convened by the Committee on Middle Easr Questions</h5>
+              </div>
+              <div class="col-5 offset-1 main-event-2 pt-5 pb-3">
+                <p class="font-italic text-white">8 February 2019</p>
+                <p class="small-para">GENEVA, SWITZERLAND</p>
+                <h5 class="text-white">First meeting of the Preparatory Committee for the Fifth World Conferene of Speakers of Parliament</h5>
+              </div>
+            </div>
+            <div class="row main-event-10">
+              <div class="col-5 offset-1 mt-5 main-event-3  pt-5 pb-3">
+                <p class="font-italic text-white">21 February 2019</p>
+                <p class="small-para">NEW YORK, USA</p>
+                <h5  class="text-white">Annual Parliamentary Hearing at the United Nations</h5>
+              </div> 
+              <div class="col-5 offset-1 mt-5 main-event-4  pt-5 pb-3">
+                <p class="font-italic text-white">28 February 2019</p>
+                <h5 class="text-white">First Global Parliamentary Summit on Countering Terrorism and Violent Extremism</h5>
+              </div>
+            </div> 
+          </div>
+        </div>   
+      </div>
     </div>
+    <!---------------------------- Parliament Members and Work ---------------------------->
+    <div class="container-fluid my-5 parliament">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="heading-1 mb-0 ">PARLIAMENTS</h5>
+          <h1 class="heading-2 mt-0 mb-3">MEMBERS & WORK</h1>
+        </div>
+        <button type="button" class="btn btn-lg read-more-2"><small>See All Members &#8594</small></button>
+      </div>
+      <div class="row pl-3">
+        <div class="col px-0">
+          <div class="icon">
+            <img src="images/country/buildings/loksabha.jpg" width="280" height="200">
+          </div>
+          <p class="small-para pt-3">ASIA - PACIFIC GROUP</p>
+          <h5 class="perliament-h font-weight-bold">Sansad - Indian Parliament</h5>
+          <a href="#" class="seeall pt-5 font-weight-bold">See Work &#8594</a>
+        </div>
+        <div class="col px-0">
+          <div class="icon">
+            <img src="images/country/buildings/norvay.jpg" width="280" height="200">
+          </div>
+          <p class="small-para pt-3">TWELVE PLUS GROUP</p>
+          <h5 class="perliament-h font-weight-bold">Stortinget - Norway</h5>
+          <a href="#" class="seeall pt-5 font-weight-bold">See Work &#8594</a>
+        </div>
+        <div class="col px-0">
+          <div class="icon">
+            <img src="images/country/buildings/duma russia.jpg" width="280" height="200">
+          </div>
+          <p class="small-para pt-3">EURASIA GROUP</p>
+          <h5 class="perliament-h font-weight-bold">Duma - Russia</h5>
+          <a href="#" class="seeall pt-5 font-weight-bold">See Work &#8594</a>
+        </div>
+        <div class="col px-0">
+          <div class="icon">
+            <img src="images/country/buildings/Diet_of_Japan_Kokkai_2009.jpg" width="280" height="200">
+          </div>
+          <p class="small-para pt-3">ASIA - PACIFIC GROUP</p>
+          <h5 class="perliament-h font-weight-bold">National Diet - Japan</h5>
+          <a href="#" class="seeall pt-5 font-weight-bold">See Work &#8594</a>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------- Highlights IPU Assembly ---------------------------->
+    <div class="container-fluid col my-5 highlight">
+      <h5 class="heading-1 mb-0 ">HIGHLIGHTS</h5>
+      <h1 class="heading-2 mt-0 mb-3">IPU ASSEMBLY</h1>
+      <div class="container col assembly">
+        <div class="assembly__content">
+          <p class="text-info">In three minutes, discover the highlights of the last IPU Assembly.</p>
+        </div>
+      <div class="assembly__container">
+        <div class="outer-div">
+          <div class="youtube">
+            <a href="#" class="youtub"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="watch__share">
+          <div class="watchlater">
+            <a href="#" class="text-white"><i class="fa fa-clock-o d-flex text-white" aria-hidden="true"></i><small>Watch Later</small></a>
+          </div>
+          <div class="share">
+            <a href="#" class="text-white"><i class="fa fa-share d-flex text-white" aria-hidden="true"></i><small>Share</small></a>
+          </div>
+        </div>
+        </div>
+      </div>  
+    </div>
+
+    <!---------------------------- RESOURCES Pblications ---------------------------->
+    <div class="container-fluid my-5 resources">
+      <div class="comt d-flex justify-content-between">
+        <div>
+          <h5 class="heading-1 mb-0 ">RESOURCES</h5>
+          <h1 class="heading-2 mt-0 mb-3">PUBLICATIONS</h1>
+        </div>
+        <button type="button" class="btn btn-lg read-more-publication"><small>See All Publications &#8594</small></button>
+      </div>
+      <div class="row pl-3">
+        <div class="col pl-1">
+          <div class="card-div">
+            <div class="card">           <!--First-card -->
+              <div class="card-header border-0 bg-white">
+                <div class="card-header__logo pl-2">
+                  <img src="images/inter.png" alt="logo" width="30px">
+                </div>
+                <div class="card-header__content d-flex flex-column">
+                  <small class="card-header__content-heading">Inter-Parliamentary Union</small>
+                  <small class="card-header__content-paragraph pl-3 mx-0">For democracy. For everyone</small>
+                </div>
+              </div>
+              <div class="card-body pl-2 pr-0">
+                <h3 class="card-text text-info">
+                  Youth participation in national parliaments: <small class="text-primary">2018</small>
+                </h3>
+              </div>
+                <img class="card-image" src="images/newyouth-1.jpg" width="300" height="200">
+              <div class="card-footer border-0"></div>  
+            </div>
+            <p class="small-para pt-3">REPORTS</p>
+            <h5 class="font-weight-bold">Youth participation in national parliaments: 2018</h5>
+          </div>
+        </div>
+        <div class="col pl-0">   <!--second-card -->
+          <div class="card-div">
+            <div class="card">     
+              <div class="card-header border-0 bg-white">
+                <div class="card-header__logo pl-2">
+                  <img src="images/inter.png" alt="logo" width="30px">
+                </div>
+                <div class="card-header__content d-flex flex-column">
+                  <small class="card-header__content-heading">Inter-Parliamentary Union</small>
+                  <small class="card-header__content-paragraph pl-3 mx-0">For democracy. For everyone</small>
+                </div>
+              </div>
+              <div class="card-body pr-5">
+                <h3 class="card-text text-info">
+                  World e-Parliament Report 2018
+                </h3>
+              </div>
+                <img class="card-image" src="images/newyouth-2.jpg" width="300" height="200">
+              <div class="card-footer border-0"></div>
+            </div>
+            <p class="small-para pt-3">REPORTS</p>
+            <h5 class="font-weight-bold">World e-parliament Report 2018</h5>
+          </div>
+        </div>
+        <div class="col pl-0">
+          <div class="card-div">
+            <div class="card">        <!--Third-card -->
+              <div class="card-header pb-0 border-0 bg-white">
+                <div class="card-header__logo pl-2">
+                  <img src="images/inter.png" alt="logo" width="30px">
+                </div>
+                <div class="card-header__content d-flex flex-column">
+                  <small class="card-header__content-heading">Inter-Parliamentary Union</small>
+                  <small class="card-header__content-paragraph pl-3 mx-0">For democracy. For everyone</small>
+                </div>
+              </div>
+              <div class="card-body">
+                <h4 class="card-text text-info pr-2">
+                  Sexism, harassment and violence against women in parliament in Europe.
+                </h4>
+              </div>
+                <img class="card-image" src="images/newyouths-3.jpg" width="300" height="200">
+              <div class="card-footer border-0"></div>  
+            </div>
+            <p class="small-para pt-3">REPORTS</p>
+            <h5 class="font-weight-bold">Sexism, harassment and violence against women in parliaments in Europe.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------- Newsletter Joincommunity ---------------------------->
+    <div class="container-fluid py-5 newsletter">
+      <h5 class="heading-1 mb-0 ">NEWSLETTER</h5>
+      <h1 class="heading-2 mt-0 mb-3">JOIN COMMUNITY</h1>
+      <div class="p-0 m-0"> 
+        <p class="container__text">Find IPU in your mailbox weekly. Publications, articles, videos and every week.</p>
+        <div class="col col-md d-flex justify-content-between p-0 m-0">
+          <div class="col-9 p-0 m-0">
+            <form>
+              <input type="email" name="email" placeholder="Enter Your Email ID">
+              <button type="button" class="btn btn-lg text-white Subscribe">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-lg-3 social-link">
+            <ul class="d-flex justify-content-around">
+              <li class="item ">
+              <a href="#" class="side__nav-link"><i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+             </li>
+             <li class="item">
+              <a href="#" class="side__nav-link"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+             </li>
+             <li class="item">
+              <a href="#" class="side__nav-link"><i class="fa fa-instagram" aria-hidden="true" width="20px"></i>
+              </a>
+             </li>
+             <li class="item">
+              <a href="#" class="side__nav-link"><i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+             </li>
+             <li class="item">
+              <a href="#" class="side__nav-link"><i class="fa fa-circle" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i>
+              </a>
+             </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>          <!-- caption-1-->
   
+    <footer class="footer">
+      <div class="container-fluid footer__content text-center text-md-left pt-4">
+        <div class="row text-center text-md-left py-5">
+          <div class="col-md-3 col-lg-3 text-white font-small">
+            <h6>Contact Us</h6>
+            <p>Inter-parliamentary Union 5, chemin du Pommier, Case postale 33o
+              CH-1218 Le Grand-Saconnex, Geneva,Switzerland
+            </p>
+            <div>
+              <p>+41 22 919 41 50 (Switzerland)</p>
+              <p>+1 212 557 58 80 (New York)</p>
+            </div>
+            <div>
+              <h6>General Inquiries</h6>
+              <p>postbox@ipu.org</p>
+            </div>
+            <div>
+              <h6>Media Inquiries</h6>
+              <p>press@ipu.org</p>
+            </div>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 text-white">
+            <h6>Our Work</h6>
+            <p><a href="#" class="text-white">Strong Parliaments</a></p>
+            <p><a href="#" class="text-white">Gender Equality</a></p>
+            <p><a href="#" class="text-white">Human Rights</a></p>
+            <p><a href="#" class="text-white">Sustainable Development</a></p>
+            <p><a href="#" class="text-white">Peace and Security</a></p>
+            <p><a href="#" class="text-white">Global Goverence</a></p>
+            <p><a href="#" class="text-white">Youth</a></p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 text-white">
+            <h6>Quick Links</h6>
+            <p><a href="#" class="text-white">New Parliaments</a></p>
+            <p><a href="#" class="text-white">Women in Politics</a></p>
+            <p><a href="#" class="text-white">Upcoming Events</a></p>
+            <p><a href="#" class="text-white">Publications</a></p>
+            <p><a href="#" class="text-white">Work with us</a></p>
+            <p><a href="#" class="text-white">Subscribe to our newsletter</a></p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-col-5 col-lg-5">
+            <h6 class="text-white">Recent Tweets</h6>
+            <div class="media border p-3 bg-white">
+              <img src="images/shruti  sharma.jpg.jpg" alt="IPU" class=" media__image rounded-circle">
+              <div class="media-body pl-3">
+                <h6>IPU President</h6>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                  type and scrambled it to make a type specimen book. It ha</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="footer-copyright col py-3">
+        <div class="row align-items-center justify-content-around pt-2">
+          <div class="">
+            <p class="text-white">&#169;Copyright IPU 2018</p>
+          </div>
+          <div class="">
+            <img src="images/inter.png" width="50px">
+          </div>
+          <div class="text-white">
+            <p>Terms of use|Privacy Statement</p>
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   

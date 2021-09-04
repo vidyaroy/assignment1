@@ -1,277 +1,650 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********************************** Global ********************************/
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+.heading-1 {
+  font-weight: 800;
+  color: #CBD7E5;
+}
+.heading-2 {
+  font-weight: 900;
+  color: #0061A2;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.small-para {
+  font-size: 11px;
+  margin-bottom: 5px;
+  font-weight: 800;
+  color: #42C4CF;
+}
+
+.read-more {
+  color: #EA6918;
 }
 
 /*************************************** Side Nav **********************/
-.side-nav {
-    /* position: absolute; */
-    position: fixed;
-    right: 0;
-    height: 100%;
-    width: 100px;
+.side__nav {
+  position: fixed;
+  right: 0;
+  height: 90%;
+  width: 100px;
 }
 
-.div {
-    margin-top: 50px;
-    margin-left: 30px;
+.side__nav-img {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+small {
+  padding: 0 0 0 5px;
 }
 
 .social-links {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-/*************************************** Main **********************/
-main {
-    flex: 1;
-    font-family: 'Roboto', sans-serif;
+.side__nav-link {
+  color: #74787C;
 }
 
-#header {
-    margin: 10px 90px;
-    display: flex;
-    /* background-color:bisque; */
-    height: 90px;
-    border: 1px solid grey;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 0;
+/*************************************** Header **********************/
+.navbar {
+  margin: 20px 90px 0;
 }
 
-.header__mainlogo {
-    padding-top: 10px;
-} 
-
-.header__mainlogo h4 {
-    float: right;
-    position: relative;
-    left: 85px;
-    bottom: 60px;
-    font-size: 16px;
-}
-
-.header__mainlogo p {
-    position: relative;
-    left: 85px;
-    bottom: 70px;
-    font-size: 10px;
-    text-align: center;
-    line-height: 1;
-    padding: 5px 20px;
-
-}
-
-/*************************************** Navbar-1 Navbar-2 **********************/
-.header__nav {
-    height: 70px;
-    width: 100%;
-    margin-left:100px;
-    margin-top: 10px;
-}
-
-.header__navlogo {
-    padding-top: 15px;
-    padding-left: 20px;
-}
-
-.header__nav p {
-    font-size: 10px;
-
+.nav-1 {
+  position: relative;
+  left: 585px;
+  bottom: 25px;
 }
 
 .navbar-1 {
   position: relative;
-  bottom: 110px;
-  font-size: 13px;
+  top: 25px;
 }
 
-.navbar-2 {
-    position: relative;
-    bottom: 90px;
-    left: 240px;
-    font-size: 15px;
+.content {
+  float: right;
+}
+
+.p {
+  font-size: 15px;
+  margin: 17px 0 0 0;
+}
+
+.p-1 {
+  font-size: 10px;
+  text-indent: 20px;
+}
+
+.brand-content {
+  padding: 0;
+  margin: 0;
+}
+
+.brand-anniversry {
+  height: 70px;
+  padding-top: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  margin-left: 10px;
+}
+
+.anni-logo {
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.navbar {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .example button {
-    padding: 10px;
-    color: gray;
-    font-size: 17px;
-    cursor: pointer;
+  padding: 10px;
+  color: gray;
+  font-size: 17px;
+  cursor: pointer;
 }
 
 button {
-    border: none;
-    background-color: white;
-}
+  border: none;
+  background-color: white;
+}  
 
 /*********************************** Showcase ********************************/
 section#showcase {
-    height: 500px;
-    background-image: url(images/building-with-flags-outside_cq5dam.web.1200.630);
-    margin: 20px 90px 0;
+  height: 500px;
+  background-image: url(images/building-with-flags-outside_cq5dam.web.1200.630);
+  margin: 20px 90px 0;
 }
 
 .showcase-container {
-   padding-top: 90px;
-   font-family: 'Roboto' sans-serif;
-   line-height: 1.1;
+  padding-top: 90px;
+  font-family: 'Roboto' sans-serif;
+  line-height: 1.1;
 }
 
 .showcase-p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .btn-1 {
-    background-color: orangered;
-    border-radius:  50px 50px 50px 50px;
-    border: 1px solid orangered;
+  background-color: orangered;
+  border-radius:  50px 50px 50px 50px;
+  border: 1px solid orangered;
 }
-
-small {
-    padding: 10px;
-}
-
 
 /********************************************** News ********************************/
-
 .news {
-    padding: 30px 87px 0;
-}
-
-.news-h4 {
-    font-weight: 800;
-    color: #CBD7E5;
-}
-.news-h3 {
-    font-weight: 900;
-    color: #0061A2;
-}
-
-.seeall {
-    color: #EA6918;
-}
-
-.news-p {
-    font-size: 11px;
-    margin-bottom: 5px;
-    font-weight: 800;
-    color: #42C4CF;
+  padding: 30px 87px 0;
 }
 
 .news-h {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /********************************************** Icons ********************************/
-
 .icon-maindiv {
-    padding: 30px 87px 0;
+  padding: 30px 87px 0;
 }
 
 .icons__para {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 /********************************************** Events ********************************/
 .events {
-    padding: 30px 87px 0;
+  padding: 30px 87px 0;
 }
 
+.detail {
+  background-image: url(images/country/buildings/geneva-parliament.jpg);
+  background-size: cover;
+}
 
+.main-event {
+  background-color: #22658F;
+  opacity: 0.7;
+  margin-top: 355px;
+  padding: 20px 60px 30px 20px;
+}
 
-/**************************************** media Queries **********************************/
-  
+.main-event-1 {
+  background-image: url(images/country/buildings/egypt-parliament.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  line-height: 0.8;
+}
+.main-event-2 {
+  background-image: url(images/country/buildings/geneva-parliament.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  line-height: 0.8; 
+}
+.main-event-3 {
+  background-image: url(images/country/buildings/newyork-parliament.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 0.8;
+}
+.main-event-4 {
+  background-image: url(images/country/buildings/geneva-parliamet-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 0.8;
+}
+
+.read-more-1 {
+  color: #EA6918;
+}
+/********************************************** Perliaments ********************************/
+
+.parliament {
+  padding: 30px 86px 0;
+} 
+
+.perliament-h {
+  font-size: 18px;
+  margin-bottom: 10px;
+} 
+
+.seeall {
+  color: #EA6918;
+} 
+
+.read-more-2 {
+  color: #EA6918;
+}
+
+/********************************************** Highlights IPU Assembly ********************************/
+.highlight {
+  padding: 30px 87px 0;
+}
+
+.assembly {
+  height: 500px;
+  background-image: url(images/final-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.assembly__container {
+  padding: 0 250px 0 260px;
+  text-indent: 25px;
+}
+.assembly__content {
+  font-size: 35px;
+  padding-top: 100px;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-bottom:0 ;
+  margin-bottom: 0;
+  text-indent: 25px;
+}
+
+.outer-div {
+  height: 110px; 
+  width: 110px;
+  border: 1px solid #E85B00;
+  border-radius: 50%;
+  margin-left: 250px;
+}
+.youtube {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #E85B00;
+  border-radius: 50%;
+  background-color: #E85B00;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+.youtub {
+  position: relative;
+  top: 25px;
+  right: 13px;
+  color: white;
+  background-color: #E85B00;
+}
+
+.watchlater {
+  position: relative;
+  top: 40px;
+  left: 250px;
+  color: black;
+}
+
+.share {
+  margin-left: 320px;
+}
+
+/********************************************** Resources and Publications ********************************/
+.resources {
+  padding: 30px 87px 0;
+
+}
+
+.read-more-publication {
+  color: #EA6918;
+}
+
+.card {
+  width: 300px;
+  height: 90%;
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.09)
+}
+
+.card-header__content-heading {
+  font-size: 10px;
+}
+
+.card-header__content-paragraph {
+  font-size: 7px;
+}
+
+.card-text {
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+.card-body {
+  box-shadow: 0 40px 34px 0 rgba(0, 0, 0, 0.07)
+}
+
+.card-footer {
+  border: none;
+}
+
+/**************************************** Newsletter  Joincommunity **********************************/
+.newsletter {
+  padding: 30px 87px 0;
+}
+
+.item {
+  list-style-type: none;
+}
+
+input[type="email"] {
+  height: 50px;
+  width: 650px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius:  50px 50px 50px 50px;
+  opacity: 0.6;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.Subscribe {
+  height: 50px;
+  width: 140px;
+  background-color: #E85B00;
+  border-radius: 50px 50px 50px 50px;
+  position: relative;
+  right: 40px;
+  bottom: 3px;
+  font-size: 18px;
+}
+
+.container__text {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0.8;
+  word-spacing: 1;
+}
+
+/**************************************** Footer **********************************/
+.footer__content {
+  padding: 30px 87px 0;
+}
+
+.footer {
+  background-color: #004F7C;
+}
+
+.footer-copyright {
+  background-color: #003256;
+}
+.media__image {
+  width: 30px;
+}
+
+.media {
+  border-radius: 10px;
+}
+
+/**************************************** media Queries **********************************/ 
 @media screen and (max-width:768px) {
-    .side-nav {
-        display:none;
-    }
+  .side__nav {
+    display:none !important;
+  }
 }
 
-@media screen and (max-width:1003px) {
-    .navbar-1, .navbar-2 {
-       display: none;
-    }
-}
-
+/*------------------- Header ---------------*/
 @media screen and (max-width:768px) {
-    #header  {
-        width: 100%;
-        background-color: blue;
-        margin-left: 0;
-        padding-left: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .header__mainlogo h4  {
-        padding-left:10px;
-    }
+  .navbar {
+    width: 100%;
+    margin: 0;
+    background-color: #0061A2;
+    color: white;
+  }
 
-    .header__nav {
-        margin-left: 150px;
-    }
-}
+  .navbar-toggler-icon {
+    height: 3rem;
+    width: 3rem;
+    border: white;
+    background-color: white;
+  }
 
-/* showcase */
-@media screen and (max-width:768px) {
-    section#showcase {
-        background-position: 100%;
-        align-items: flex-end;
-        margin: 0 auto;
-       
-    }
-    .container {
-        position: relative;
-        top: 500px;
-        background-color: blue;
-        text-align: center;
-        max-width: 100%;
-        margin: 0;   
-    }
+  .nav-1 {
+    position: relative;
+    top: 10px;
+  }
+
+  .navbar-1 {
+    position: relative;
+    right: 70px;
+    float: right;
+  }
 }
 
 @media screen and (max-width:414px) {
-    section#showcase {
-        background-position: 80%;
-        align-items: flex-end;
-        margin: 0 auto;
-    }
-       
+  .navbar {
+    width: 200%;
+  }
+
+  .navbar-1 {
+    float: right;
+  }
 }
 
-/* news */
+/*---------------------- showcase ----------------*/
 @media screen and (max-width:768px) {
-    .news {
-        position: relative;
-        top: 500px;   
-     }
-     .seeall {
-         position: absolute;
-         top: 750px;
-         left: 300px;
-         z-index: 1;
+  section#showcase {
+    background-position: 100%;
+    align-items: flex-end;
+    margin: 0 auto; 
+  }
 
-    }
+  .container {
+    position: relative;
+    top: 500px;
+    background-color: #0061A2;
+    text-align: center;
+    max-width: 100%;
+    margin: 0;   
+  }
 }
 
-/* icons */
+@media screen and (max-width:414px) {
+  section#showcase {
+    width: 200%;
+    background-position: 80%;
+    align-items: flex-end;
+  }    
+}
+
+/*----------------------- news --------------------*/
 @media screen and (max-width:768px) {
-    .icon-maindiv {
-        position: relative;
-        top: 500px;  
-    }
+  .news {
+    position: relative;
+    top: 400px;   
+  }
+
+  .read-more {
+    position: relative;
+    top: 800px;
+    right: 220px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #EA6918;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .read-more {
+    position: relative;
+    top: 1500px;
+    right: 120px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #EA6918;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+/*----------------------- icons ----------------------*/
+@media screen and (max-width:768px) {
+  .icon-maindiv {
+    position: relative;
+    top: 500px;  
+  }
+}
+
+/*--------------------- events -----------------------*/
+@media screen and (max-width:768px) {
+  .events {
+    position: relative;
+    top: 500px;
+  }
+
+  .main-event-9 {
+    margin-top: 50px;
+  }
+
+  .main-event-8 {
+    padding-right: 70px;
+    padding-left: 10px;
+  }
+
+  .read-more-1 {
+    position: relative;
+    top: 1250px;
+    right: 220px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #EA6918;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .read-more-1 {
+    position: relative;
+    top: 1750px;
+  }
+}
+
+/*------------- Parliament Members and Work ---------------*/
+@media screen and (max-width:768px) {
+  .parliament {
+    position: relative;
+    top: 570px;
+  }
+
+  .read-more-2 {
+    position: relative;
+    top: 700px;
+    right: 220px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #EA6918;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .read-more-2 {
+    position: relative;
+    top: 1320px;
+  }
+}
+
+/*-------------------- assembly --------------*/
+@media screen and (max-width:768px) {
+  .highlight {
+    position: relative;
+    top: 600px;
+  }
+
+  .assembly {
+    position:relative;
+    top: 20px;
+  }
+
+  .assembly__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .outer-div {
+    position: relative;
+    right: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .youtub {
+    position: relative;
+    right: 22px;   
+  } 
+
+  .watch__share {
+    position: relative;
+    right: 300px;
+  } 
+}
+
+/*--------------------- RESOURCES Pblications -----------------*/
+@media screen and (max-width:768px) {
+  .resources {
+    position: relative;
+    top: 650px;
+  }
+
+  .read-more-publication {
+    position: relative;
+    top: 1600px;
+    right: 220px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #EA6918;
+    border-radius: 50px 50px 50px 50px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .read-more-publication {
+    position: relative;
+    top: 1700px;
+  }
+}
+
+/*---------------- Newsletter Joincommunity -----------------*/
+@media screen and (max-width:768px) {
+  .newsletter {
+    position: relative;
+    top: 700px;
+  }
 }
 
 @media screen and (max-width:768px) {
-    .events {
-        position: relative;
-        top: 500px;  
-    }
+  .Subscribe {
+    position: relative;
+    left: 200px;
+    margin-top: 20px;
+  }
+  
+  .social-link {
+    position: relative;
+    top: 140px;
+    right: 240px;
+    padding: 0;
+    margin: 0;
+  }
 }
+
+@media screen and (max-width:768px) {
+  .footer {
+    position: relative;
+    top: 700px;
+  }
+}
+
